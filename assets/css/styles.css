@@ -1,0 +1,157 @@
+:root {
+  --color-primary : #f0f0f0;
+  --color-secondary: #000000;
+  --color-auxiliary: #FF8800;
+}
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  background-color: var(--color-primary);
+}
+
+.container-page {
+  margin: 0 10%;
+  color: var(--color-secondary);
+}
+
+header {
+  display: flex;
+  gap: 3rem;
+  padding: 6rem 2rem;
+}
+
+a {
+  color: var(--color-auxiliary);
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+.header__presentation > h1 {
+  color: var(--color-auxiliary);
+  flex: 1;
+  padding: 2rem 0;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.header__presentation > h2 {
+  padding: 2rem 0 0rem;
+  max-width: 500pt;
+  border-left-color: 2px solid var(--color-auxiliary);
+}
+
+.header__perfil {
+  flex: 1;
+  background-color: transparent;
+}
+
+.header__perfil > img  {
+  border-radius: 99px;
+}
+
+.section-content {
+  margin-top: 2.5rem;
+}
+
+.section__title {
+  font-size: 2rem;
+}
+
+.section-content__cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  gap: 2rem;
+  border-bottom: 2px solid var(--color-auxiliary);
+}
+
+.section-content__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+  text-align: center;
+}
+
+.section-content__card > img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 5px;
+}
+
+.section-content__card > a {
+  width: 100pt;
+}
+
+.card-skills {
+  font-weight: 700;
+  background-color: var(--color-auxiliary);
+  padding: 2rem;
+  border-radius: 5px;
+  transition: color 0.3s;
+}
+
+.card-skills:hover {
+  color: var(--color-primary);
+}
+
+.section-content__card-projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card-projects {
+  width: auto;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.card-projects > h2 {
+  margin-bottom: 1rem;
+  color: var(--color-auxiliary);
+  font-weight: 700;
+}
+
+.card-projects > p {
+  padding: 0.5rem 0;
+  text-align: justify;
+  width: 300pt;
+}
+
+.card-projects__p--variant {
+  font-weight: 700;
+}
+
+.card-projects > a {
+  margin-right: 1rem;
+}
+
+.social-icon {
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.social-icon > img {
+  max-width: 100%;
+}
+
+footer {
+  margin: 1.5rem;
+  text-align: center;
+}
+
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+}
